@@ -118,7 +118,7 @@ const Home: NextPage = () => {
               <div className={styles.description}>
                 <div>WW International</div>
                 <div>Software Engineer II</div>
-                <div>May 2018 - December 2021</div>
+                <div>May 2018 - December 2020</div>
               </div>
             </div>
           </div>
