@@ -10,8 +10,9 @@ const Surface = () => {
       <div className={styles.cloudContainer}>
         {Array(15)
           .fill(0)
-          .map(() => (
+          .map((_, i) => (
             <Cloud
+              key={i.toString()}
               coordinates={{
                 x: Math.random() * 125 - 66,
                 y: Math.random() * 30 - 15,

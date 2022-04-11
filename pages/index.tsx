@@ -1,6 +1,4 @@
 import type { NextPage } from "next";
-import Head from "next/head";
-import Image from "next/image";
 import Mine from "../components/Mine";
 import Surface from "../components/Surface";
 import DirtLayer from "../components/DirtLayer";
@@ -21,11 +19,11 @@ const Home: NextPage = () => {
         >
           <div>
             <p>
-              Hi, I'm Lauren! Currently, I'm a Full Stack Software Engineer
-              based in NYC working at Twitter on Experimentation. I've written
+              Hi, I&apos;m Lauren! Currently, I&apos;m a Full Stack Software Engineer
+              based in NYC working at Twitter on Experimentation. I&apos;ve written
               both frontend and backend services using a wide range of
               technologies, including React, GraphQL, Express, and many more.
-              I'm also currently working part-time as an adjunct at New York
+              I&apos;m also currently working part-time as an adjunct at New York
               University teaching a lab section of undergraduate Data
               Structures. I love teaching, and hope to start mentoring more
               young women early in their careers.
@@ -33,8 +31,8 @@ const Home: NextPage = () => {
             <p>
               In my free time, I love to cook, play video games, draw, read, and
               write: both fiction and code. I dream big, and hope to someday
-              publish a novel, and publish an indie game (workin' on it!). I
-              love to try new things; I've been taking ceramic classes for the
+              publish a novel, and publish an indie game (workin&apos; on it!). I
+              love to try new things; I&apos;ve been taking ceramic classes for the
               past few months, and have a laundry list of other things to try.
             </p>
           </div>
