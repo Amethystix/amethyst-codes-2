@@ -1,0 +1,15 @@
+.cloud {
+  background-image: url('../../public/cloud.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  image-rendering: pixelated;
+  position: relative;
+  height: 64px;
+  width: 128px;
+}
+
+.cloudContainer {
+  margin-left: 35px;
+  min-width: 128px;
+}
+

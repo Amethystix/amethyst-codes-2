@@ -1,0 +1,41 @@
+.dirt {
+  background-image: url('../../public/dirt.png');
+  image-rendering: pixelated;
+}
+
+.dirtContainer {
+  padding: 10px 40px;
+  text-align: center;
+}
+
+.dirtText {
+  background-color: #bf9f7c;
+  padding: 25px;
+  border-radius: 10px;
+  border: 5px solid #513413;
+
+  @media only screen and (max-width: 550px) {
+    padding: 10px;
+  }
+}
+
+.index {
+  font-size: 36px;
+  text-align: center;
+  display: inline-block;
+
+  @media only screen and (max-width: 550px) {
+    font-size: 24px;
+  }
+}
+
+.indexItems {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+
+  div {
+    font-size: 24px;
+  }
+}

@@ -1,0 +1,71 @@
+.heart {
+  background-image: url('../../public/heart.png');
+  image-rendering: pixelated;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+
+  @media only screen and (max-width: 550px) {
+    height: 16px;
+    width: 16px;
+    margin-left: 10px;
+  }
+}
+
+.react {
+  background-image: url('../../public/react.png');
+  image-rendering: pixelated;
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 0 15px;
+
+  @media only screen and (max-width: 550px) {
+    height: 16px;
+    width: 16px;
+    margin: 0 10px;
+  }
+}
+
+.next {
+  background-image: url('../../public/next-logo.png');
+  image-rendering: pixelated;
+  height: 50px;
+  width: 75px;
+  display: inline-block;
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 15px;
+
+  @media only screen and (max-width: 550px) {
+    height: 30px;
+    width: 60px;
+    margin-left: 10px;
+  }
+}
+
+.footerContainer {
+  padding: 25px;
+  background-color: purple;
+}
+
+.footerContent {
+  color: white;
+  text-align: center;
+  font-size: 24px;
+
+  @media only screen and (max-width: 550px) {
+    font-size: 16px;
+  }
+}
+
+.madeWith {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

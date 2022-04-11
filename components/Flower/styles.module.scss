@@ -1,0 +1,32 @@
+.yellowTulip {
+  background-image: url('../../public/tulip.png');
+  height: 80px;
+  min-width: 55px;
+}
+
+.pinkTulip {
+  background-image: url('../../public/pinkTulip.png');
+  height: 80px;
+  min-width: 55px;
+}
+
+.sunflower {
+  background-image: url('../../public/sunflower.png');
+  height: 90px;
+  min-width: 55px;
+}
+
+.flower {
+  image-rendering: pixelated;
+  margin: 0 25px -10px;
+  position: relative;
+  z-index: 2;
+  background-size: cover;
+}
+
+.daisy {
+  background-image: url('../../public/daisy.png');
+  height: 95px;
+  min-width: 65px;
+  background-size: cover;
+}

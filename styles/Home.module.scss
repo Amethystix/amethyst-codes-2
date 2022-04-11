@@ -1,0 +1,116 @@
+.educationList {
+  width: 100%;
+  font-size: 28px;
+
+  @media only screen and (max-width: 800px) {
+    font-size: 24px;
+  }
+}
+
+.workBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  margin: 25px 0;
+  font-size: 28px;
+
+  img {
+    width: 100px;
+    height: 100px;
+    margin-right: 100px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    display: block;
+    text-align: center;
+
+    img {
+      margin: 0;
+    }
+  }
+}
+
+.description {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.workExperience {
+  width: 100%;
+}
+
+.skillsList {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+
+  ul {
+    h4 {
+      font-size: 32px;
+      margin: 0 -10px 10px;
+      text-decoration: underline;
+    }
+  }
+
+  @media only screen and (max-width: 800px) {
+    display: block;
+  }
+}
+
+.linkContainer {
+  display: flex;
+  margin: 15px 0;
+  width: 100%;
+
+  a {
+    display: inline-block;
+    margin-right: 25px;
+    height: 64px;
+    width: 64px;
+    image-rendering: pixelated;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+
+  @media only screen and (max-width: 550px) {
+    justify-content: space-between;
+    width: 100%;
+
+    a {
+      margin: 0;
+    }
+  }
+}
+
+.github {
+  background-image: url('../public/github.png');
+
+  &:hover {
+    background-image: url('../public/github-hover.png');
+  }
+}
+
+.linkedin {
+  background-image: url('../public/linkedin.png');
+
+  &:hover {
+    background-image: url('../public/linkedin-hover.png');
+  }
+}
+
+.twitter {
+  background-image: url('../public/twitter-active.png');
+
+  &:hover {
+    background-image: url('../public/twitter-hover.png');
+  }
+}
+
+.email {
+  background-image: url('../public/email.png');
+
+  &:hover {
+    background-image: url('../public/email-hover.png');
+  }
+}

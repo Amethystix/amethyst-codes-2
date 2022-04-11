@@ -1,0 +1,100 @@
+.infoBox {
+  background-color: lightgray;
+  padding: 20px 50px;
+  border: 5px solid #55433a;
+  margin: 50px;
+  font-size: 20px;
+
+  @media only screen and (max-width: 600px) {
+    margin: 20px 0;
+    padding: 20px 10px;
+  }
+}
+
+.title {
+  margin: 0;
+  font-size: 40px;
+
+  @media only screen and (max-width: 550px) {
+    text-align: center;
+  }
+}
+
+.clickGem {
+  margin-bottom: -200px;
+  position: relative;
+  &.right {
+    float: right;
+  }
+
+  @media only screen and (max-width: 550px) {
+    margin-bottom: -150px;
+  }
+}
+
+@mixin gemSize {
+  height: 200px;
+  width: 200px;
+  background-size: contain;
+  image-rendering: pixelated;
+  background-repeat: no-repeat;
+
+  @media only screen and (max-width: 550px) {
+    height: 150px;
+    width: 150px;
+  }
+}
+
+@mixin gemstone($gems...) {
+  @for $i from 0 to length($gems) {
+    $gemType: nth($gems, $i + 1);
+    .#{$gemType} {
+      @include gemSize;
+      background-image: url('../../public/#{$gemType}.png');
+    }
+
+    .#{$gemType}-1 {
+      @include gemSize;
+      background-image: url('../../public/#{$gemType}-1.png');
+    }
+
+    .#{$gemType}-2 {
+      @include gemSize;
+      background-image: url('../../public/#{$gemType}-2.png');
+    }
+  }
+}
+
+@include gemstone('amethyst', 'diamond', 'rosequartz', 'emerald', 'sapphire');
+
+
+.hide {
+  visibility: hidden;
+}
+
+.show {
+  visibility: unset;
+}
+
+.boxContent {
+  display: flex;
+  align-items: center;
+
+  @media only screen and (max-width: 600px) {
+    display: block;
+  }
+}
+
+.imageContainer {
+  min-width: 150px;
+  margin-left: 25px;
+
+  img {
+    width: 150px;
+  }
+
+  @media only screen and (max-width: 550px) {
+    margin-left: 0;
+    text-align: center;
+  }
+}

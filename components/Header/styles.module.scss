@@ -1,0 +1,55 @@
+.title {
+  display: flex;
+  background-color: purple;
+  align-items: center;
+  font-size: 40px;
+  color: white;
+
+  @media only screen and (max-width: 550px) {
+    font-size: 24px;
+  }
+}
+
+.headline {
+  font-size: 38px;
+  animation: typing 3s steps(40, end), blink-caret .75s step-end infinite;
+  display: inline-block;
+  overflow: hidden;
+  border-right: .05em solid purple;
+  white-space: nowrap;
+  letter-spacing: .05em;
+  margin-left: 25px;
+  @media only screen and (max-width: 550px) {
+    font-size: 28px;
+    animation: typing-mobile 3s steps(40, end), blink-caret .75s step-end infinite;
+  }
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 242px }
+}
+
+@keyframes typing-mobile {
+  from { width: 0 }
+  to { width: 175px }
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
+.logo {
+  background-image: url('../../public/favicon.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 64px;
+  image-rendering: pixelated;
+  width: 64px;
+
+  @media only screen and (max-width: 550px) {
+    height: 32px;
+    width: 32px;
+  }
+}
