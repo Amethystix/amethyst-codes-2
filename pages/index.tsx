@@ -19,7 +19,7 @@ const Home: NextPage = () => {
         >
           <div>
             <p>
-              Hi, I&apos;m Lauren! Currently, I&apos;m a Full Stack Software Engineer
+              Hi, I&apos;m Lauren! Currently, I&apos;m a Senior Full Stack Software Engineer
               based in NYC working at Twitter on Experimentation. I&apos;ve written
               both frontend and backend services using a wide range of
               technologies, including React, GraphQL, Express, and many more.
@@ -100,7 +100,7 @@ const Home: NextPage = () => {
               <img src="./twitter-logo.png" />
               <div className={styles.description}>
                 <div>Twitter Inc</div>
-                <div>Software Engineer II</div>
+                <div>Senior Software Engineer</div>
                 <div>January 2021 - Present</div>
               </div>
             </div>
