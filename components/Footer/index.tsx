@@ -11,7 +11,7 @@ const Footer = () => {
           <span> and most importantly </span>
           <div className={styles.heart} />
         </div>
-        <div>All sprites made by me. &copy;2022</div>
+        <div>All sprites made by me. &copy;{new Date().getFullYear()}</div>
       </div>
     </div>
   );

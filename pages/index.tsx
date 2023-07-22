@@ -18,22 +18,12 @@ const Home: NextPage = () => {
           img={<img src={"./me.png"} />}
         >
           <div>
-            <p>
-              Hi, I&apos;m Lauren! Currently, I&apos;m a Senior Full Stack Software Engineer
-              based in NYC working at Twitter on Experimentation. I&apos;ve written
-              both frontend and backend services using a wide range of
-              technologies, including React, GraphQL, Express, and many more.
-              I&apos;m also currently working part-time as an adjunct at New York
-              University teaching a lab section of undergraduate Data
-              Structures. I love teaching, and hope to start mentoring more
-              young women early in their careers.
-            </p>
+            <p>Hi, I'm Lauren, a full stack engineer from NYC. Currently, I'm working at Tono Health as a founding engineer, and am having a blast working at an early-stage company! Throughout my various roles, I've accumulated experience working with many frontend and backend frameworks, primarily using TypeScript. I'm happy to say I was an early adapter of Next.js, and consider it one of my favorite frameworks to work with!</p>
+            <p>I've previously worked at Twitter on the experimentation team as a Senior Software Engineer, and at WeightWatchers as a growth engineer. I also adjunct some semesters at New York University teaching a recitation of Data Structures to undergraduates. I love being able to teach college students and mentor early-career software engineers, and am hoping to start mentoring more young women early in their careers.</p>
             <p>
               In my free time, I love to cook, play video games, draw, read, and
-              write: both fiction and code. I dream big, and hope to someday
-              publish a novel, and publish an indie game (workin&apos; on it!). I
-              love to try new things; I&apos;ve been taking ceramic classes for the
-              past few months, and have a laundry list of other things to try.
+              write: both fiction and code. I like to dream big, and hope to someday
+              publish a novel, and publish more games. In general, I'm a very open-minded person who loves to try new things.
             </p>
           </div>
         </InfoBox>
@@ -68,14 +58,13 @@ const Home: NextPage = () => {
             <ul>
               <h4>Technologies</h4>
               <li>React</li>
-              <li>GraphQL</li>
-              <li>Next.js</li>
-              <li>Kafka</li>
-              <li>Express</li>
-              <li>Finatra</li>
-              <li>Finagle</li>
-              <li>Jest + React Testing Library</li>
               <li>Docker</li>
+              <li>Next.js</li>
+              <li>TRPC</li>
+              <li>AWS Lambda</li>
+              <li>GraphQL</li>
+              <li>Kafka</li>
+              <li>Jest + React Testing Library</li>
               <li>LÖVE2d</li>
               <li>Unity</li>
             </ul>
@@ -87,6 +76,7 @@ const Home: NextPage = () => {
               <li>Spriting</li>
               <li>Writing</li>
               <li>Public speaking</li>
+              <li>Graphic design</li>
             </ul>
           </div>
         </InfoBox>
@@ -96,12 +86,21 @@ const Home: NextPage = () => {
           gem={GemStones.RoseQuartz}
         >
           <div className={styles.workExperience}>
+          <div className={styles.workBox}>
+              <img src="./tono-logo.png" />
+              <div className={styles.description}>
+                <div>Tono Health</div>
+                <div>Founding Engineer</div>
+                <div>September 2022 - Present</div>
+              </div>
+            </div>
+            <h3>Past Experience</h3>
             <div className={styles.workBox}>
               <img src="./twitter-logo.png" />
               <div className={styles.description}>
                 <div>Twitter Inc</div>
                 <div>Senior Software Engineer</div>
-                <div>January 2021 - Present</div>
+                <div>January 2021 - September 2022</div>
               </div>
             </div>
             <div className={styles.workBox}>
@@ -109,10 +108,9 @@ const Home: NextPage = () => {
               <div className={styles.description}>
                 <div>New York University</div>
                 <div>Adjunct Instructor for CSCI-102 Data Structures</div>
-                <div>January 2022 - Present</div>
+                <div>Spring 2022 & Fall 2022</div>
               </div>
             </div>
-            <h3>Past Experience</h3>
             <div className={styles.workBox}>
               <img src="./ww-logo.png" />
               <div className={styles.description}>
@@ -130,8 +128,7 @@ const Home: NextPage = () => {
               <div className={styles.description}>
                 <h3>StackIt!</h3>
                 <div>
-                  A mobile game to be released on Android and iOS. Made with
-                  Unity2D. Release date TBD!
+                  A mobile game on iOS where the objective is to stack Boxy the box as high as you can in under a minute! Made with Unity 2D, <a className={styles.link} rel="noopener" target="_blank" href='https://apps.apple.com/us/app/stackit-2d/id1631021639'>check it out on the App Store!</a>
                 </div>
               </div>
             </div>
