@@ -18,13 +18,70 @@ const Home: NextPage = () => {
           img={<img src={"./me.png"} />}
         >
           <div>
-            <p>Hi, I'm Lauren, a full stack engineer from NYC. Currently, I'm working at Tono Health as a founding engineer, and am having a blast working at an early-stage company! Throughout my various roles, I've accumulated experience working with many frontend and backend frameworks, primarily using TypeScript. I'm happy to say I was an early adapter of Next.js, and consider it one of my favorite frameworks to work with!</p>
-            <p>I've previously worked at Twitter on the experimentation team as a Senior Software Engineer, and at WeightWatchers as a growth engineer. I also adjunct some semesters at New York University teaching a recitation of Data Structures to undergraduates. I love being able to teach college students and mentor early-career software engineers, and am hoping to start mentoring more young women early in their careers.</p>
+            <p>
+              Hi, I'm Lauren, a full stack engineer from NYC. Currently, I'm
+              working at Tono Health as a founding engineer, and am having a
+              blast working at an early-stage company! Throughout my various
+              roles, I've accumulated experience working with many frontend and
+              backend frameworks, primarily using TypeScript.
+            </p>
+            <p>
+              I've previously worked at Twitter on the experimentation team as a
+              Senior Software Engineer, and at Weight Watchers as a growth
+              engineer. I also adjunct some semesters at New York University
+              teaching a recitation of Data Structures to undergraduates. I love
+              being able to teach college students and mentor early-career
+              software engineers, and am hoping to start mentoring more young
+              women early in their careers.
+            </p>
             <p>
               In my free time, I love to cook, play video games, draw, read, and
-              write: both fiction and code. I like to dream big, and hope to someday
-              publish a novel, and publish more games. In general, I'm a very open-minded person who loves to try new things.
+              write: both fiction and code. I like to dream big, and hope to
+              someday publish a novel, and publish more games. In general, I'm a
+              very open-minded person who loves to try new things.
             </p>
+          </div>
+        </InfoBox>
+
+        <InfoBox
+          direction="right"
+          title="Work Experience"
+          gem={GemStones.RoseQuartz}
+        >
+          <div className={styles.workExperience}>
+            <div className={styles.workBox}>
+              <img src="./tono-logo.png" />
+              <div className={styles.description}>
+                <div>Tono Health</div>
+                <div>Founding Engineer</div>
+                <div>September 2022 - Present</div>
+              </div>
+            </div>
+            <h3>Past Experience</h3>
+            <div className={styles.workBox}>
+              <img src="./twitter-logo.png" />
+              <div className={styles.description}>
+                <div>Twitter Inc</div>
+                <div>Senior Software Engineer</div>
+                <div>January 2021 - September 2022</div>
+              </div>
+            </div>
+            <div className={styles.workBox}>
+              <img src="./nyu.png" />
+              <div className={styles.description}>
+                <div>New York University</div>
+                <div>Adjunct Instructor for CSCI-102 Data Structures</div>
+                <div>Spring 2022 & Fall 2022</div>
+              </div>
+            </div>
+            <div className={styles.workBox}>
+              <img src="./ww-logo.png" />
+              <div className={styles.description}>
+                <div>WW International</div>
+                <div>Software Engineer II</div>
+                <div>May 2018 - December 2020</div>
+              </div>
+            </div>
           </div>
         </InfoBox>
 
@@ -80,47 +137,6 @@ const Home: NextPage = () => {
             </ul>
           </div>
         </InfoBox>
-        <InfoBox
-          direction="right"
-          title="Work Experience"
-          gem={GemStones.RoseQuartz}
-        >
-          <div className={styles.workExperience}>
-          <div className={styles.workBox}>
-              <img src="./tono-logo.png" />
-              <div className={styles.description}>
-                <div>Tono Health</div>
-                <div>Founding Engineer</div>
-                <div>September 2022 - Present</div>
-              </div>
-            </div>
-            <h3>Past Experience</h3>
-            <div className={styles.workBox}>
-              <img src="./twitter-logo.png" />
-              <div className={styles.description}>
-                <div>Twitter Inc</div>
-                <div>Senior Software Engineer</div>
-                <div>January 2021 - September 2022</div>
-              </div>
-            </div>
-            <div className={styles.workBox}>
-              <img src="./nyu.png" />
-              <div className={styles.description}>
-                <div>New York University</div>
-                <div>Adjunct Instructor for CSCI-102 Data Structures</div>
-                <div>Spring 2022 & Fall 2022</div>
-              </div>
-            </div>
-            <div className={styles.workBox}>
-              <img src="./ww-logo.png" />
-              <div className={styles.description}>
-                <div>WW International</div>
-                <div>Software Engineer II</div>
-                <div>May 2018 - December 2020</div>
-              </div>
-            </div>
-          </div>
-        </InfoBox>
         <InfoBox title="Projects" gem={GemStones.Sapphire}>
           <div className={styles.workExperience}>
             <div className={styles.workBox}>
@@ -128,7 +144,16 @@ const Home: NextPage = () => {
               <div className={styles.description}>
                 <h3>StackIt!</h3>
                 <div>
-                  A mobile game on iOS where the objective is to stack Boxy the box as high as you can in under a minute! Made with Unity 2D, <a className={styles.link} rel="noopener" target="_blank" href='https://apps.apple.com/us/app/stackit-2d/id1631021639'>check it out on the App Store!</a>
+                  A mobile game on iOS where the objective is to stack Boxy the
+                  box as high as you can in under a minute! Made with Unity 2D,{" "}
+                  <a
+                    className={styles.link}
+                    rel="noopener"
+                    target="_blank"
+                    href="https://apps.apple.com/us/app/stackit-2d/id1631021639"
+                  >
+                    check it out on the App Store!
+                  </a>
                 </div>
               </div>
             </div>
