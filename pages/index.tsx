@@ -19,14 +19,14 @@ const Home: NextPage = () => {
         >
           <div>
             <p>
-              Hi, I'm Lauren, a full stack engineer from NYC. Currently, I'm
+              Hi, I&apos;m Lauren, a full stack engineer from NYC. Currently, I&apos;m
               working at Tono Health as a founding engineer, and am having a
               blast working at an early-stage company! Throughout my various
-              roles, I've accumulated experience working with many frontend and
+              roles, I&apos;ve accumulated experience working with many frontend and
               backend frameworks, primarily using TypeScript.
             </p>
             <p>
-              I've previously worked at Twitter on the experimentation team as a
+              I&apos;ve previously worked at Twitter on the experimentation team as a
               Senior Software Engineer, and at Weight Watchers as a growth
               engineer. I also adjunct some semesters at New York University
               teaching a recitation of Data Structures to undergraduates. I love
@@ -37,7 +37,7 @@ const Home: NextPage = () => {
             <p>
               In my free time, I love to cook, play video games, draw, read, and
               write: both fiction and code. I like to dream big, and hope to
-              someday publish a novel, and publish more games. In general, I'm a
+              someday publish a novel, and publish more games. In general, I&apos;m a
               very open-minded person who loves to try new things.
             </p>
           </div>
