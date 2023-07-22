@@ -148,7 +148,7 @@ const Home: NextPage = () => {
                   box as high as you can in under a minute! Made with Unity 2D,{" "}
                   <a
                     className={styles.link}
-                    rel="noopener"
+                    rel="noreferrer"
                     target="_blank"
                     href="https://apps.apple.com/us/app/stackit-2d/id1631021639"
                   >
