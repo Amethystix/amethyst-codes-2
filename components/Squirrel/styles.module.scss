@@ -1,0 +1,112 @@
+
+.squirrel {
+  position: absolute;
+  animation: 15s squirrel infinite linear;
+  z-index: 4;
+  left: 5%;
+  height: 95px;
+  width: 95px;
+  background-image: url('../../public/squirrel-idle.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  image-rendering: pixelated;
+
+  @media only screen and (max-width: 550px) {
+    height: 75px;
+    width: 75px;
+    animation: 7.5s squirrel infinite linear;
+  }
+}
+
+@mixin run1($scale) {
+  background-image: url('../../public/squirrel-run-1.png');
+  transform: translateY(0) scaleX($scale);
+}
+
+@mixin run2($scale) {
+  background-image: url('../../public/squirrel-run-2.png');
+  transform: translateY(5px) scaleX($scale);
+}
+
+@keyframes squirrel {
+  0%, 4.99% {
+    background-image: url('../../public/squirrel-idle.png');
+  }
+  5% {
+    left: 5%;
+  }
+
+  @for $i from 5 to 12 {
+    @if $i % 2 == 1 {
+      #{($i)}%, #{($i)}.99% {
+        @include run1(1);
+      }
+    } @else {
+      #{($i)}%, #{($i)}.99% {
+        @include run2(1);
+      }
+    }
+  }
+
+  12%, 26.99% {
+    background-image: url('../../public/squirrel-idle.png');
+    left: 20%;
+    transform: scaleX(1) translateY(0);
+  }
+
+  @for $i from 27 to 50 {
+    @if $i % 2 == 1 {
+      #{($i)}%, #{($i)}.99% {
+        @include run1(1);
+      }
+    } @else {
+      #{($i)}%, #{($i)}.99% {
+        @include run2(1);
+      }
+    }
+  }
+  50% {
+    left: 80%;
+    background-image: url('../../public/squirrel-idle.png');
+    transform: scaleX(-1);
+  }
+
+  60.99% {
+    left: 80%;
+    background-image: url('../../public/squirrel-idle.png');
+  }
+  @for $i from 61 to 82 {
+    @if $i % 2 == 1 {
+      #{($i)}%, #{($i)}.99% {
+        @include run1(-1);
+      }
+    } @else {
+      #{($i)}%, #{($i)}.99% {
+        @include run2(-1);
+      }
+    }
+  }
+  82.01%, 86.99% {
+    transform: scaleX(-1) translateY(0);
+    left: 40%;
+    background-image: url('../../public/squirrel-idle.png');
+  }
+
+
+  @for $i from 87 to 100 {
+    @if $i % 2 == 1 {
+      #{($i)}%, #{($i)}.99% {
+        @include run1(-1);
+      }
+    } @else {
+      #{($i)}%, #{($i)}.99% {
+        @include run2(-1);
+      }
+    }
+  }
+
+  100% {
+    left: 5%;
+    transform: scaleX(1);
+  }
+}

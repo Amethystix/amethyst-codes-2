@@ -1,8 +1,8 @@
 import * as React from "react";
-import Flower from "../Flower";
 import FlowerField from "../FlowerField";
 import Cloud from "../Cloud";
 import styles from "./styles.module.scss";
+import Squirrel from "../Squirrel";
 
 const Surface = () => {
   return (
@@ -20,6 +20,7 @@ const Surface = () => {
             />
           ))}
       </div>
+      <Squirrel/>
       <FlowerField />
       <div className={styles.grass} />
       <div className={styles.crust} />

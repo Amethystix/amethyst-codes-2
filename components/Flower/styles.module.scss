@@ -20,8 +20,17 @@
   image-rendering: pixelated;
   margin: 0 25px -10px;
   position: relative;
-  z-index: 2;
+  z-index: 3;
   background-size: cover;
+
+  &:nth-child(2n) {
+    z-index: 3;
+    transform: scale(.8);
+  }
+
+  &:nth-child(2n - 1) {
+    z-index: 4;
+  }
 }
 
 .daisy {
